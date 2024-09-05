@@ -8,7 +8,7 @@ Simple version of wc. Let's call it ccwc that takes the command line option -c a
 
 ccwc -c test.txt
 '''
-'''
+
 import os
 import sys
 
@@ -37,7 +37,7 @@ def ccwc():
 
 if __name__ == "__main__":
     ccwc()
-'''
+
 
 '''
 Step 2:
@@ -45,7 +45,7 @@ In this step, the goal is to support the command line option -l that outputs the
 
 ccwc -l test.txt
 '''
-'''
+
 import sys
 
 def count_lines(file_path):
@@ -76,7 +76,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-'''
+
 
 '''
 Step 3:
@@ -84,7 +84,7 @@ In this step, the goal is to support the command line option -w that outputs the
 
 ccwc -w test.txt
 '''
-'''
+
 import sys
 
 def word_count(file_path):
@@ -117,7 +117,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-'''
+
 
 '''
 Step 4:
@@ -125,7 +125,7 @@ In this step, the goal is to support the command line option -m that outputs the
 
 ccwc -m test.txt
 '''
-'''
+
 import sys
 
 def count_characters(file_path):
@@ -157,7 +157,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-'''
+
 
 '''
 Step 5:
@@ -171,7 +171,7 @@ to the -c, -l, and -w options.
 ccwc test.txt
 '''
 
-'''
+
 import sys
 
 def count_lines(file_path):
@@ -245,7 +245,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-'''
+
 
 '''
 Step 6:
