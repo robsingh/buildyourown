@@ -10,6 +10,7 @@ I will be using Python to complete these challenges. Later on, the goal is to ac
 # Structure of the Challenge
 
 Each script will have the doc string to explain about the challenge. Every step is outlined in the docstrings and the following code will be the solution to the particular step. I will follow a more organized approach once I have completed more challenges. 
+I am going to change the file structure of these challenges once I am done with couple of challenges. I do have a plan in my mind. 
 
 # Contributions
 
