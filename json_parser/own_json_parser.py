@@ -1,17 +1,51 @@
+# This challenge is to build your own JSON parser.
 '''
-This challenge is to build your own JSON parser.
-
-Building a JSON parser is an easy way to learn about parsing techniques which are useful for everything from parsing simple data formats through to building a fully featured compiler for a programming language.
-
-Parsing is often broken up into two stages: lexical analysis and syntactic analysis. 
-Lexical analysis is the process of dividing a sequence of characters into meaningful chunks, called tokens. 
-Syntactic analysis (which is also sometimes referred to as parsing) is the process of analysing the list of tokens to match it to a formal grammar.
-
-JSON - JavaScript Object Notation - a lightweight data-interchange format, which is widely used for transmitting data over the internet.
+Step 1 Implementation:
 '''
 
-'''
-Step 1:
+import sys
+# Lexer : Tokenize the input string
+def lexer(json_string):
+    tokens = []
+    for char in json_string.strip():
+        if char in '{}':
+            tokens.append(char)
+    return tokens
 
+# Parser : Check if the tokens form a valid JSON object
+def parser(tokens):
+    # for this step, we are only validating an empty object '{}'
+    if len(tokens) == 2 and tokens[0] == '{' and tokens[1] == '}':
+        return True
+    else:
+        return False
+    
+# main function to handle input and output
+def main():
+    if len(sys.argv) != 2:
+        print("Usage: json_parser <file>")
+        sys.exit(1)
+    
+    file_path = sys.argv[1]
 
-'''
+    try:
+        with open(file_path, 'r') as file:
+            json_string = file.read()
+        
+        # Lex and parse the JSON string
+        tokens = lexer(json_string)
+        is_valid = parser(tokens)
+
+        if is_valid:
+            print("valid")
+            sys.exit(0)
+        else:
+            print("invalid")
+            sys.exit(1)
+    
+    except FileNotFoundError:
+        print(f"File not found: {file_path}")
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()
