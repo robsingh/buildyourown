@@ -19,4 +19,4 @@ Lexer : A function that reads a JSON string (in this challenge) and returns a li
 Parser : A function that takes these token and determines if they represent a valid JSON structure.
 
 ## Step 2
-Coming soon!!!
+In this step, the goal is to extend the parser to parse a simple JSON object containing string keys and string values i.e. {"key": "value"}
