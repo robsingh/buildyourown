@@ -1,9 +1,13 @@
 # This challenge is to build your own JSON parser.
 '''
-Step 1 Implementation:
+Step 1: Implementation
+Notes:
+exit(1) means there was some issue/error/problem and that is why problem is exciting
+exit(0) means clean exit without any errors/problems
 '''
 
 import sys
+'''
 # Lexer : Tokenize the input string
 def lexer(json_string):
     tokens = []
@@ -49,3 +53,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+'''
+
