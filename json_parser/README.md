@@ -20,3 +20,7 @@ Parser : A function that takes these token and determines if they represent a va
 
 ## Step 2
 In this step, the goal is to extend the parser to parse a simple JSON object containing string keys and string values i.e. {"key": "value"}
+
+Thought process:
+Now, in addition to { and }, we need the lexer to recognize strings (keys and values), colons, and commas. Strings are enclosed in double quotes.
+The parser will now need to check if a key-value pair is correctly formed inside the braces.
