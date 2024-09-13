@@ -24,3 +24,14 @@ In this step, the goal is to extend the parser to parse a simple JSON object con
 Thought process:
 Now, in addition to { and }, we need the lexer to recognize strings (keys and values), colons, and commas. Strings are enclosed in double quotes.
 The parser will now need to check if a key-value pair is correctly formed inside the braces.
+
+## Step 3:
+In this step your goal is to extend the parser to parse a JSON object containing string, numeric, boolean and null values, i.e.:
+
+{
+  "key1": true,
+  "key2": false,
+  "key3": null,
+  "key4": "value",
+  "key5": 101
+}
