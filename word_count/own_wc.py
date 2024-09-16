@@ -1,12 +1,10 @@
 '''
 Build your own version of Unix command line tool 'wc'.
-wc - word, line, character, and byte count. 
+wc - word, line, character, and byte count.
 '''
-'''
-Step 1:
-Simple version of wc. Let's call it ccwc that takes the command line option -c and outputs number of bytes in a file.
 
-ccwc -c test.txt
+'''
+Step 1: Implementation
 '''
 
 import os
@@ -40,10 +38,7 @@ if __name__ == "__main__":
 
 
 '''
-Step 2:
-In this step, the goal is to support the command line option -l that outputs the number of lines in a file.
-
-ccwc -l test.txt
+Step 2: Implementation
 '''
 
 import sys
@@ -79,10 +74,7 @@ if __name__ == "__main__":
 
 
 '''
-Step 3:
-In this step, the goal is to support the command line option -w that outputs the number of words in a file.
-
-ccwc -w test.txt
+Step 3: Implementation
 '''
 
 import sys
@@ -120,10 +112,7 @@ if __name__ == "__main__":
 
 
 '''
-Step 4:
-In this step, the goal is to support the command line option -m that outputs the number of characters in a file.
-
-ccwc -m test.txt
+Step 4: Implementation
 '''
 
 import sys
@@ -160,18 +149,8 @@ if __name__ == "__main__":
 
 
 '''
-Step 5:
-In the step, the goal is to support the default option - i.e. no options are provided, which is equivalent 
-to the -c, -l, and -w options. 
-
--c -> counts characters in the file.
--l -> counts number of lines in the file. 
--w -> count number of words in the file.
-
-ccwc test.txt
+Step 5: Implementation
 '''
-
-
 import sys
 
 def count_lines(file_path):
@@ -248,8 +227,7 @@ if __name__ == "__main__":
 
 
 '''
-Step 6:
-The goal is to support being able to read from standard input if no filename is specified. 
+Step 6: Implementation
 '''
 
 import sys
