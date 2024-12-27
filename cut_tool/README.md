@@ -7,11 +7,11 @@ Cut - cut out the selected portions of each line of a file.
 
 ## Step 1
 
-In this step, the goal is to implement a simple version of cut that will open the provided tab separated file and print out the second field (-f2) from each line. 
-Output would look something like this:
+In this step, the goal is to implement a simple version of cut that will open the provided tab separated file and 
+print out the second field (-f1) from each line. 
 
-cut -f2 sample.tsv
-
+Output:
+cut -f1 sample.tsv
 f1
 1
 6
