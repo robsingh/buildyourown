@@ -1,5 +1,8 @@
 '''
 Step 1: Use a tab separated file and print out the second field from each line.
+
+If I want to alias this script to behave exactly like the 'cut' command, preferable way is to create the alias
+in the shell configuration file.
 '''
 import sys
 import csv
