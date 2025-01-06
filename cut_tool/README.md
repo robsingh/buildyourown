@@ -10,6 +10,7 @@ Cut - cut out the selected portions of each line of a file.
 In this step, the goal is to implement a simple version of cut that will open the provided tab separated file and 
 print out the second field (-f1) from each line. 
 
+```bash
 Output:
 cut -f1 sample.tsv
 f1
