@@ -4,7 +4,7 @@ Step 1: Use a tab separated file and print out the second field from each line.
 import sys
 import csv
 import argparse
-'''
+
 def read_tsv_file(file_path, field_index):
     try:
         with open(file_path, 'r') as file:
@@ -39,11 +39,12 @@ if __name__ == "__main__":
     field_index = args.f - 1
 
     read_tsv_file(args.file, field_index)
-'''
+
 
 '''
 Step 2 : Implementation
 '''
+
 def read_file(file_path, field_index, delimiter):
     try:
         with open(file_path, 'r') as file:
@@ -76,3 +77,8 @@ if __name__ == "__main__":
 
     field_index = args.f - 1
     read_file(args.file, field_index, args.d)
+
+
+'''
+Step 3: Implementation
+'''
