@@ -7,10 +7,10 @@ Cut - cut out the selected portions of each line of a file.
 
 ## Step 1
 
-In this step, the goal is to implement a simple version of cut that will open the provided tab separated file and 
-print out the second field (-f1) from each line. 
+In this step, the goal is to implement a simple version of cut that will open the provided tab separated file and print out the second field (-f1) from each line. 
 
-Output:
+**Output:**
+```bash
 cut -f1 sample.tsv
 f1
 1
@@ -66,3 +66,24 @@ Song title,Artist
 "20 Good Reasons",Thirsty Merc
 "Adore You",Harry Styles
 "Africa",Toto
+
+## Step 4
+
+In this step, the goal is to support reading from the standard input stream if no filename is provided or if the single dash is provided '-'.
+
+tail -n5 fourchords.csv | cut -d, -f"1 2"
+"Young Volcanoes",Fall Out Boy
+"You Found Me",The Fray
+"You'll Think Of Me",Keith Urban
+"You're Not Sorry",Taylor Swift
+"Zombie",The Cranberries
+
+or
+
+tail -n5 fourchords.csv| cut -d, -f"1 2" -
+"Young Volcanoes",Fall Out Boy
+"You Found Me",The Fray
+"You'll Think Of Me",Keith Urban
+"You're Not Sorry",Taylor Swift
+"Zombie",The Cranberries
+
