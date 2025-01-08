@@ -94,7 +94,7 @@ tail -n5 fourchords.csv | cut -d, -f"1 2"
 or
 
 ```bash
-tail -n5 fourchords.csv| cut -d, -f"1 2" -
+tail -n5 fourchords.csv | cut -d, -f"1 2" -
 "Young Volcanoes",Fall Out Boy
 "You Found Me",The Fray
 "You'll Think Of Me",Keith Urban
