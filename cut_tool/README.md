@@ -101,3 +101,12 @@ tail -n5 fourchords.csv | cut -d, -f"1 2" -
 "You're Not Sorry",Taylor Swift
 "Zombie",The Cranberries
 ```
+
+## Step 5
+
+In this step, we are going to use the learning from our first challenge, the wc tool, and combine it with our new cut tool to build a simple command line pipeline. We will test by seeing how many unique artists are in the data set, again piping together Unix command line tools.
+
+```bash
+cut -f2 -d, fourchords.csv | uniq | wc -l
+155
+```
