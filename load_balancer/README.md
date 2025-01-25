@@ -25,9 +25,9 @@ Load balancers can work at different levels of the OSI seven-layer network model
 One must have knowledge of multi-threading, concurency and asynchronous programming before jumping into the implementation of this project.
 
 
-## Notes on Multi-threading, concurrency and asynchronous programming in Python
-- **Multi-threading** - Multi-threading is the capability of a processor to execute multiple threads concurrently within a single process. A thread is a lightweight unit of execution that operates within the context of a process and shares its resources, such as memory.
-
+## Notes on Multi-threading, Concurrency and Asynchronous Programming in Python
+- **Multi-threading** :
+Multi-threading is the capability of a processor to execute multiple threads concurrently within a single process. A thread is a lightweight unit of execution that operates within the context of a process and shares its resources, such as memory.
 Tasks that involve significant waiting time waiting for external events, such as I/O operations, are well-suited for multi-threading because they can use this waiting time to execute other threads.
 
 In Python, while we can initiate multiple threads using the threading module, true parallelism is limited due to Global Interpreter Lock (GIL). The GIL ensures that only thread executes Python bytecode at a time, which means Python threads are better suited for 
