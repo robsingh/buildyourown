@@ -33,7 +33,8 @@ Tasks that involve significant waiting time waiting for external events, such as
     In Python, while we can initiate multiple threads using the threading module, true parallelism is limited due to Global Interpreter Lock (GIL). The GIL ensures that only thread executes Python bytecode at a time, which means Python threads are better suited for 
     I/O-bound tasks rather than CPU-bound tasks. For CPU-intensive operations, we may consider alternatives like multiprocessing module, which bypasses the GIL by creating separate processes.
 
-- **Concurrency** 
+- **Concurrency** :
+
 
 
 - **Asynchronous Programming**
