@@ -41,9 +41,11 @@ In this step your goal is to extend the parser to parse a JSON object containing
 ## Step 4
 In this step your goal is to extend the parser to parse a JSON object with object and array values, i.e.:
 
+```
 {
   "key": "value",
   "key-n": 101,
   "key-o": {},
   "key-l": []
 }
+```
