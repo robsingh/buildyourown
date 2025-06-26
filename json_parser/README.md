@@ -28,6 +28,7 @@ The parser will now need to check if a key-value pair is correctly formed inside
 ## Step 3
 In this step your goal is to extend the parser to parse a JSON object containing string, numeric, boolean and null values, i.e.:
 
+```
 {
   "key1": true,
   "key2": false,
@@ -35,6 +36,7 @@ In this step your goal is to extend the parser to parse a JSON object containing
   "key4": "value",
   "key5": 101
 }
+```
 
 ## Step 4
 In this step your goal is to extend the parser to parse a JSON object with object and array values, i.e.:
