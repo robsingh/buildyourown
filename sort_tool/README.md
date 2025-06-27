@@ -5,7 +5,10 @@ The sort utility sorts text files by lines. A line is a record separated from th
 For this challenge, we will ignore binary files. (We will implement it once the challenge is finished.)
 
 Save the text as [test.txt](test.txt)
-Use this expression - tr -s '[[:punct:][:space:]]' '\n' < test.txt |sed '/^[0-9]/d' > words.txt
+
+Use this expression
+``` tr -s '[[:punct:][:space:]]' '\n' < test.txt |sed '/^[0-9]/d' > words.txt
+```
 to create a list of all the words in the file and save it as [words.txt](./words.txt)
 
 ## Step 1
