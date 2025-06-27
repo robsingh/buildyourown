@@ -16,7 +16,7 @@ notes:
 2. think how to sort the lines - thinking
 '''
 
-FILE_PATH = '/Users/levinshah/pypy/buildyourown/sort_tool/test.txt'
+FILE_PATH = './test.txt'
 def read_file():
     try:
         with open(FILE_PATH, 'r') as file:
