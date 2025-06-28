@@ -1,35 +1,42 @@
 '''
-we want to be able to run sort and have it open a file and output the lines in the file sorted lexicographically.
-
-sort words.txt | uniq | head -n5
-A
-ACTUAL
-AGREE
-AGREEMENT
-AND
-'''
-
-'''
-
 notes:
 1. let's begin with opening the file. - done
 2. think how to sort the lines - thinking
 '''
 
-FILE_PATH = './test.txt'
-def read_file():
+import sys
+
+# FILE_PATH = './words.txt'
+
+def read_file(file_path):
     try:
-        with open(FILE_PATH, 'r') as file:
-            content = file.read().strip()
+        with open(file_path, 'r') as file:
+            content = file.readlines()
             if not content:
                 print(f"The file is empty. Please verify the file before proceeding.")
                 sys.exit(1)
-            print(content)
-    
+        return content
+
     except FileNotFoundError:
         print(f"File not found.")
 
 
+def sorting_printing(file_path):
+    file_content = read_file(file_path)
+    sorting_content = sorted(file_content)
+    for element in sorting_content:
+        print(element, end="")
 
 
-read_file()
+def main():
+    if len(sys.argv) != 2:
+        print("Usage: <script> words.txt | head -n5")
+        sys.exit(1)
+
+    file_path = sys.argv[1]
+    sorting_printing(file_path)
+
+
+if __name__ == "__main__":
+    main()
+

@@ -24,6 +24,9 @@ AGREE
 AGREEMENT
 AND
 ```
+Here is my take on this challenge, a constructive feedback. You can see that the flag uniq is mentioned as a command line argument above, but
+there is no mentioning of including unique functionality in Step 1. The unique functionality is mentioned to be included in Step 2. This is a great example of requirements
+that could be clearer.
 
 ## Step 2
 
