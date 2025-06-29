@@ -1,8 +1,4 @@
-'''
-notes:
-1. let's begin with opening the file. - done
-2. think how to sort the lines - thinking
-'''
+#step1: Implementation
 
 import sys
 
