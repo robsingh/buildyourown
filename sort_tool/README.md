@@ -29,5 +29,17 @@ there is no mentioning of including unique functionality in Step 1. The unique f
 that could be clearer.
 
 ## Step 2
+In this step, your goal is to implement the same functionality as above but the unique functionality built into sort, i.e. the -u option.
 
+```
+sort -u words.txt | head -n5
+A
+ACTUAL
+AGREE
+AGREEMENT
+AND
+```
+You can achieve this whilst sorting, before sorting or after sorting the list.
 
+As described, the -u option
+Suppresses all lines that have a key that is equal to an already processed one.  This option, similarly to -s, implies a stable sort.  If used with -c or -C, sort also checks that there are no lines with duplicate keys.
