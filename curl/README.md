@@ -15,9 +15,10 @@ You'll need to write the code to parse the URL and extract:
 * The path.
 
 When you run your solution you should get some output like this:
-
+```
 % cccurl http://eu.httpbin.org/get
 connecting to eu.httpbin.org
 Sending request GET /get HTTP/1.1
 Host: eu.httpbin.org
 Accept: */*
+```
