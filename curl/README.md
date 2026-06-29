@@ -22,3 +22,7 @@ Sending request GET /get HTTP/1.1
 Host: eu.httpbin.org
 Accept: */*
 ```
+While solving this step of the problem, I used 'requests' library and easily got the protocol text. However, after reading the problem statement I realised that if I just use
+the built-in library it would not sound like me building my own tool. It is a great reminder to read the specifications carefully before jumping into the solution.
+
+## Step 2
