@@ -5,8 +5,7 @@ For this challenge we're going to build a curl clone that is focused on making H
 Our curl clone will be able to connect to a server and send the HTTP methods : GET, DELETE, POST and PUT.
 
 ## Step 1
-In this step, your goal is to read the provided URL from the command line and print out the protocol text that would be sent for
-a GET request.
+In this step, your goal is to read the provided URL from the command line and print out the protocol text that would be sent for a GET request.
 
 You'll need to write the code to parse the URL and extract:
 * The protocol - though for the moment we'll assume this is always going to be HTTP, but you should always check.
@@ -22,7 +21,8 @@ Sending request GET /get HTTP/1.1
 Host: eu.httpbin.org
 Accept: */*
 ```
-While solving this step of the problem, I used 'requests' library and easily got the protocol text. However, after reading the problem statement I realised that if I just use
-the built-in library it would not sound like me building my own tool. It is a great reminder to read the specifications carefully before jumping into the solution.
+If we want to type just cccurl http://... like the example, we have two easy options:
+Alias (quickest): alias cccurl="python /full/path/to/step1.py"
+Executable script: add #!/usr/bin/env python3 as the first line of the file, then run chmod +x step1.py and put it on your PATH.
 
 ## Step 2
